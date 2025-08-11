@@ -10,6 +10,10 @@ import rtabmap2 from '../assets/rtabmapnew2.jpeg';
 import rtabmap3 from '../assets/rtabmapnew3.jpeg';
 import rtabmap4 from '../assets/rtabmapnew4.jpeg';
 import rtabmapnew5 from '../assets/rtabmapnew5.jpeg';
+import zedcamera from '../assets/zed1Untitled.jpeg';
+import newbot from '../assets/post123Untitled.jpeg';
+import jetsonnano from '../assets/jetsonUntitled.jpeg';
+
 
 const ProjectROS2 = () => (
   <div className="project-page">
@@ -81,6 +85,52 @@ const ProjectROS2 = () => (
       The following are some of the RTAB-Map mapping outputs during different test runs:
     </p>
 
+    <img
+      src={zedcamera}
+      alt="RTAB-Map Output 5"
+      style={{
+        width: '100%',
+        maxWidth: '600px',
+        borderRadius: '12px',
+        margin: '2rem 0',
+        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
+      }}
+    />
+    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
+      This is the ZED camera used for mapping
+    </p>
+
+    <img
+      src={jetsonnano}
+      alt="RTAB-Map Output 5"
+      style={{
+        width: '100%',
+        maxWidth: '600px',
+        borderRadius: '12px',
+        margin: '2rem 0',
+        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
+      }}
+    />
+    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
+      This is the Jetson Orin Nano
+    </p>
+
+    <img
+      src={newbot}
+      alt="RTAB-Map Output 5"
+      style={{
+        width: '100%',
+        maxWidth: '600px',
+        borderRadius: '12px',
+        margin: '2rem 0',
+        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
+      }}
+    />
+
+    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
+      this is the new bot that was made in order to rectify the Odometery issue in old bot.
+    </p>
+
     {/* RTAB-Map Image 1 */}
     <img
       src={rtabmap1}
@@ -94,7 +144,7 @@ const ProjectROS2 = () => (
       }}
     />
     <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
-      Description for RTAB-Map image 1.
+      This is the pointcloud visualization from the depth data from ZED camera.
     </p>
 
     {/* RTAB-Map Image 2 */}
@@ -110,7 +160,7 @@ const ProjectROS2 = () => (
       }}
     />
     <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
-      Description for RTAB-Map image 2.
+      RTAB Map package used for 3D mapping
     </p>
 
     {/* RTAB-Map Image 3 */}
@@ -126,7 +176,7 @@ const ProjectROS2 = () => (
       }}
     />
     <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
-      Description for RTAB-Map image 3.
+      Loop Closure detection in RTAB Map
     </p>
 
     {/* RTAB-Map Image 4 */}
@@ -142,7 +192,7 @@ const ProjectROS2 = () => (
       }}
     />
     <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
-      Description for RTAB-Map image 4.
+      Partial 3D map generated from the robot and RTAB map
     </p>
 
     {/* RTAB-Map Image 5 */}
@@ -158,12 +208,7 @@ const ProjectROS2 = () => (
       }}
     />
     <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
-      Description for RTAB-Map image 5.
-    </p>
-
-    <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: '#ccc' }}>
-      The results uploaded above are older and the new results will be uploaded after the project is completed with localization. The project is about to be finished and the new results are far more promising.
-      Stay tuned for the end results.
+      RTAB Map Viewer
     </p>
 
     <div style={{ textAlign: 'center' }}>
