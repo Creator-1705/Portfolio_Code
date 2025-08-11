@@ -5,6 +5,11 @@ import slamVideo from '../assets/rtabvid1.mp4';
 import ros2Image from '../assets/2022-09-26_Arducam_TOF2.avif';
 import slamVideo1 from '../assets/arducamtofcamera .mp4';
 import slamVideo2 from '../assets/rtabvid2.mp4';
+import rtabmap1 from '../assets/rtabmapnew.jpeg';
+import rtabmap2 from '../assets/rtabmapnew2.jpeg';
+import rtabmap3 from '../assets/rtabmapnew3.jpeg';
+import rtabmap4 from '../assets/rtabmapnew4.jpeg';
+import rtabmapnew5 from '../assets/rtabmapnew5.jpeg';
 
 const ProjectROS2 = () => (
   <div className="project-page">
@@ -27,17 +32,16 @@ const ProjectROS2 = () => (
       The robot uses Arducam TOF camera for the depth data. Below is the RAW Depth data from the camera.  
     </p>
 
-    
     <img
-    src={ros2Image}
-    alt="ROS2 SLAM robot"
-    style={{
+      src={ros2Image}
+      alt="ROS2 SLAM robot"
+      style={{
         width: '100%',
         maxWidth: '600px',
         borderRadius: '12px',
         margin: '2rem 0',
         boxShadow: '0 0 12px rgba(0,0,0,0.4)'
-    }}
+      }}
     />
 
     <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: '#ccc' }}>
@@ -46,27 +50,25 @@ const ProjectROS2 = () => (
     </p>
 
     <div style={{ margin: '2rem 0', textAlign: 'left' }}>
-        <video
+      <video
         controls
         style={{
-            width: '360px',
-            height: '640px',
-            maxWidth: '100%',
-            borderRadius: '12px',
-            objectFit: 'contain',
-            boxShadow: '0 0 10px rgba(0,0,0,0.4)'
+          width: '360px',
+          height: '640px',
+          maxWidth: '100%',
+          borderRadius: '12px',
+          objectFit: 'contain',
+          boxShadow: '0 0 10px rgba(0,0,0,0.4)'
         }}
-    >
+      >
         <source src={slamVideo1} type="video/mp4" />
         Your browser does not support the video tag.
-        </video>
+      </video>
     </div>
 
     <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: '#ccc' }}>
       The IMU, Odom, Depth,RGB data all were combined for the 3D mapping . below is the video for the first test result from the RTAB Package.
-
     </p>
-
 
     <div style={{ margin: '2rem 0', textAlign: 'left' }}>
       <video width="640" height="auto" controls style={{ maxWidth: '100%', borderRadius: '12px' }}>
@@ -76,8 +78,92 @@ const ProjectROS2 = () => (
     </div>
 
     <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: '#ccc' }}>
-      The results uploaded above are older and the new results will be uploaded after the project is completed with localization .The project is about to be finished and the new results are far more promising.
-      stay tuned for the end results.
+      The following are some of the RTAB-Map mapping outputs during different test runs:
+    </p>
+
+    {/* RTAB-Map Image 1 */}
+    <img
+      src={rtabmap1}
+      alt="RTAB-Map Output 1"
+      style={{
+        width: '100%',
+        maxWidth: '600px',
+        borderRadius: '12px',
+        margin: '2rem 0',
+        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
+      }}
+    />
+    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
+      Description for RTAB-Map image 1.
+    </p>
+
+    {/* RTAB-Map Image 2 */}
+    <img
+      src={rtabmap2}
+      alt="RTAB-Map Output 2"
+      style={{
+        width: '100%',
+        maxWidth: '600px',
+        borderRadius: '12px',
+        margin: '2rem 0',
+        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
+      }}
+    />
+    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
+      Description for RTAB-Map image 2.
+    </p>
+
+    {/* RTAB-Map Image 3 */}
+    <img
+      src={rtabmap3}
+      alt="RTAB-Map Output 3"
+      style={{
+        width: '100%',
+        maxWidth: '600px',
+        borderRadius: '12px',
+        margin: '2rem 0',
+        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
+      }}
+    />
+    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
+      Description for RTAB-Map image 3.
+    </p>
+
+    {/* RTAB-Map Image 4 */}
+    <img
+      src={rtabmap4}
+      alt="RTAB-Map Output 4"
+      style={{
+        width: '100%',
+        maxWidth: '600px',
+        borderRadius: '12px',
+        margin: '2rem 0',
+        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
+      }}
+    />
+    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
+      Description for RTAB-Map image 4.
+    </p>
+
+    {/* RTAB-Map Image 5 */}
+    <img
+      src={rtabmapnew5}
+      alt="RTAB-Map Output 5"
+      style={{
+        width: '100%',
+        maxWidth: '600px',
+        borderRadius: '12px',
+        margin: '2rem 0',
+        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
+      }}
+    />
+    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
+      Description for RTAB-Map image 5.
+    </p>
+
+    <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: '#ccc' }}>
+      The results uploaded above are older and the new results will be uploaded after the project is completed with localization. The project is about to be finished and the new results are far more promising.
+      Stay tuned for the end results.
     </p>
 
     <div style={{ textAlign: 'center' }}>
