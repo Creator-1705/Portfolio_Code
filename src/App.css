@@ -1,0 +1,22 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.page-divider {
+  border: none;
+  border-top: 3px solid rgba(255, 255, 255, 0.50); /* faint white line */
+  margin: 1.5rem auto;
+  width: 90%;
+  opacity: 0.6;
+}
+
+
+main {
+  margin-top: 60px; /* avoid overlap with navbar */
+}

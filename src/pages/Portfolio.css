@@ -1,0 +1,184 @@
+.portfolio-section {
+  min-height: 100vh;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  padding: 2rem 2rem;
+  margin-top: 0rem;
+}
+
+
+.portfolio-section h2 {
+  font-size: 2rem; /* ⬅️ Increase this value */
+  margin-bottom: 2rem;
+  color: #00bcd4;
+}
+
+
+/* Projects Section */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-box {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+}
+
+.project-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-box p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.view-button {
+  padding: 0.5rem 1rem;
+  background-color: #00bcd4;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.view-button:hover {
+  background-color: #008c9e;
+}
+
+/* Divider Line */
+.divider {
+  border: none;
+  border-top: 1px solid #888; /* Slightly brighter for visibility */
+  margin: 3rem auto 2rem auto;
+  width: 70%;
+}
+
+/* Experience Section */
+.experience-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  color: white;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.experience-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #00bcd4;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-box {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #eee;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  border: 1px solid #333;
+}
+
+.experience-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+  color: #00bcd4;
+}
+
+.experience-box p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Skills Section */
+.skills-section {
+  margin-top: 5rem;
+  padding-top: 2rem;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #00bcd4;
+}
+
+.skills-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.skills-subsection {
+  margin-top: 3rem;
+}
+
+.skills-subsection h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill-tag {
+  background-color: #222;
+  border: 1px solid #555;
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  font-size: 0.95rem;
+  color: #00bcd4;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: #00bcd4;
+  color: #000;
+}
+
+.skill-tag .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
