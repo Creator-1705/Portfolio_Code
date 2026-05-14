@@ -24,37 +24,41 @@ const microcontrollers = [
 
 const projects = [
   {
+    title: 'Autonomous Rover using 3D SLAM',
+    description: 'Developed an autonomous ground rover during a 6-month internship at IIT Delhi, focusing on real-time navigation, 3D SLAM, localization, and sensor fusion for robust autonomous movement.',
+    path: '/projects/rtk-rover'
+  },
+  {
     title: 'ROS2 SLAM using RTAB-Map',
-    description: 'This work was done during the Internship in Makfkin Robotics .The project work mainly focuses on making a SLAM stack',
+    description: 'Implemented a full SLAM pipeline using ROS2 and RTAB-Map during an internship at Makfkin Robotics, focusing on mapping, localization, and navigation stack integration in simulation and real-world scenarios.',
     path: '/projects/ros2-slam'
   },
   {
-    title: 'Prosthetic Hand Simulation with ML Classification',
-    description: 'Prosthetic hand simulation in PyBullet with machine learning classification and ROS2 Integration',
-    path: '/projects/eeg-hand'
-  },
-  {
-    title: 'Ongoing Project',
-    description: 'place left for ongoing project',
+    title: 'Speech Controlled Drone using Transformers',
+    description: 'Designed a speech-driven control system for drones using transformer-based NLP models to interpret natural language commands and translate them into flight actions.',
     path: '/projects/5g-swarm'
   },
   {
+    title: 'Prosthetic Hand Simulation with ML Classification',
+    description: 'Built a prosthetic hand simulation in PyBullet integrated with machine learning classifiers and ROS2 for gesture recognition and control.',
+    path: '/projects/eeg-hand'
+  },
+  {
     title: 'Basic Robotics Projects',
-    description: 'Drones,MazeSolver,HoverCraft ...',
+    description: 'Collection of foundational robotics projects including drones, maze solvers, hovercraft, and small autonomous systems developed during early exploration in robotics.',
     path: '/projects/event-camera'
   },
   {
-    title: 'Microcontroller / microprocessor based Projects',
-    description: 'Some of my projects involving Microcontrollers and Processors',
+    title: 'Microcontroller / Microprocessor Projects',
+    description: 'Worked on embedded systems using microcontrollers and microprocessors, focusing on low-level programming, interfacing, and hardware control applications.',
     path: '/projects/ch32v-gui'
   },
   {
     title: 'Electronics Circuits',
-    description: 'Some of my work in making different electronics circuits',
+    description: 'Designed and tested various analog and digital electronic circuits, focusing on practical implementation and system-level understanding of electronics.',
     path: '/projects/rtk-rover'
   }
 ];
-
 const experience = [
   {
     company: 'Mafkin Robotics',
