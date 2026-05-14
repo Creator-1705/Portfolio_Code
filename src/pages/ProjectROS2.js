@@ -48,7 +48,7 @@ const ProjectROS2 = () => (
       }}
     />
     <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
-      This is the ZED camera used for mapping
+      This is the ZED camera that was used for mapping.it mainly provided the Depth and te RGB data.
     </p>
 
     <img
@@ -65,18 +65,6 @@ const ProjectROS2 = () => (
     <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
       This is the Jetson Orin Nano ,that was used with the zed camera for processing of the depth data and running the RTAB-map application.
     </p>
-
-    <img
-      src={newbot}
-      alt="RTAB-Map Output 5"
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '2rem 0',
-        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
-      }}
-    />
 
     <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
       This is the pointcloud visualization from the depth data from ZED camera.

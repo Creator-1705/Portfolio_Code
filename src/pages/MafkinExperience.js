@@ -11,13 +11,13 @@ const MafkinExperience = () => (
     <h1>Mafkin Robotics Internship</h1>
     <p style={{ fontSize: '1.2rem', color: '#ccc' }}>
       During my time at Mafkin Robotics, I worked on a mobile robot platform that performed Visual SLAM using RTAB-Map and ROS 2. 
-      I integrated a depth camera and an IMU sensor, implemented real-time UDP streaming for remote visualization, 
-      and developed localization and mapping logic using Nav2Stack. The robot could navigate autonomously in indoor environments.
+      I integrated RGB-depth camera and an IMU sensor, implemented real-time UDP streaming for remote visualization, 
+      and developed localization and mapping logic using Nav2Stack and RTAB-map. The robot could navigate autonomously in indoor environments.
       I also worked on the testing and developing the underwater robot there. 
     </p>
 
     <p style={{ fontSize: '1.2rem', color: '#ccc' }}>
-      I also contributed to building pipelines for camera calibration, frame transformations, and bag file recording for dataset collection.
+      I also contributed to building pipelines for camera processing, frame transformations, and bag file recording for dataset collection.
     </p>
 
     {/* Images */}
@@ -39,7 +39,7 @@ const MafkinExperience = () => (
         style={{ width: '100%', maxWidth: '480px', borderRadius: '12px', marginBottom: '1rem', boxShadow: '0 0 10px rgba(0,0,0,0.3)' }}
       />
       <p style={{ color: '#ccc', fontSize: '1rem' }}>
-        This picture was during the testing of the underwater robot .
+        This picture was during the testing of the underwater robot,had some fun time in the swimming pool .
       </p>
     </div>
 

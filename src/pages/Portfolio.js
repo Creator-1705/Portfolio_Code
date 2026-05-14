@@ -61,6 +61,14 @@ const projects = [
 ];
 const experience = [
   {
+    company: 'IIT Delhi',
+    role: 'Robotics Intern',
+    duration: 'Dec 2025 - May 2026',
+    type: 'On-site',
+    description: 'Worked on autonomous rover for mapping , localization and navigation. The internship was for 6-months ',
+    link: '/experience/mafkin'
+  },
+  {
     company: 'Mafkin Robotics',
     role: 'Robotics Intern',
     duration: 'May 2025 - Present',
