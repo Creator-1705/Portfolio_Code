@@ -20,7 +20,7 @@ const ProjectROS2 = () => (
     <h1>ROS2 SLAM using RTAB-Map</h1>
     
     <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: '#ccc' }}>
-      A mobile robot that performs SLAM using RTAB-Map in a ROS 2 framework. It integrates Depth Camera ,Odometery and IMU
+      The work mainly focues on making a mobile robot that performs SLAM using RTAB-Map in a ROS 2 framework. It integrates Depth Camera ,Odometery and IMU
       to create real-time 3D maps and track its position.
       Below is the video of the robot sending its camera,imu and odometery data
     </p>
@@ -28,44 +28,6 @@ const ProjectROS2 = () => (
     <div style={{ margin: '2rem 0', textAlign: 'left' }}>
       <video width="640" height="auto" controls style={{ maxWidth: '100%', borderRadius: '12px' }}>
         <source src={slamVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-
-    <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: '#ccc' }}>
-      The robot uses Arducam TOF camera for the depth data. Below is the RAW Depth data from the camera.  
-    </p>
-
-    <img
-      src={ros2Image}
-      alt="ROS2 SLAM robot"
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '2rem 0',
-        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
-      }}
-    />
-
-    <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: '#ccc' }}>
-      The depth data from the camera is sent to the PC/Laptop through UDP Port .The depth data is converted to uint16 (As per rtab requirement)
-      format and then recieved and used in the mapping. below is the output from ROS2 topics.  
-    </p>
-
-    <div style={{ margin: '2rem 0', textAlign: 'left' }}>
-      <video
-        controls
-        style={{
-          width: '360px',
-          height: '640px',
-          maxWidth: '100%',
-          borderRadius: '12px',
-          objectFit: 'contain',
-          boxShadow: '0 0 10px rgba(0,0,0,0.4)'
-        }}
-      >
-        <source src={slamVideo1} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>

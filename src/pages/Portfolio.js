@@ -19,13 +19,13 @@ const softwareTools = [
 ];
 
 const microcontrollers = [
-  'STM32', 'ESP32', '8051', 'CH32V', 'Arduino', 'Jetson Nano', 'Raspberry Pi'
+  'STM32', 'ESP32', '8051', 'CH32V', 'Arduino', 'Jetson Series', 'Raspberry Pi'
 ];
 
 const projects = [
   {
     title: 'ROS2 SLAM using RTAB-Map',
-    description: 'A mobile robot using RTAB-Map for SLAM with Odom ,RGB ,Depth data and IMU',
+    description: 'This work was done during the Internship in Makfkin Robotics .The project work mainly focuses on making a SLAM stack',
     path: '/projects/ros2-slam'
   },
   {
