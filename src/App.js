@@ -17,6 +17,7 @@ import ProjectEventCamera from './pages/ProjectEventCamera';
 import ProjectCH32V from './pages/ProjectCH32V';
 import ProjectRTK from './pages/ProjectRTK';
 import MafkinExperience from './pages/MafkinExperience';
+import ProjectRover from './pages/ProjectRover';
 
 // 📦 GA setup
 import { initGA, logPageView } from './ga';
@@ -61,6 +62,7 @@ function App() {
 
         {/* Individual project pages */}
         <Route path="/projects/ros2-slam" element={<ProjectROS2 />} />
+        <Route path="/projects/auto_rover" element={<ProjectROS2 />} />
         <Route path="/projects/eeg-hand" element={<ProjectEEG />} />
         <Route path="/projects/5g-swarm" element={<Project5G />} />
         <Route path="/projects/event-camera" element={<ProjectEventCamera />} />

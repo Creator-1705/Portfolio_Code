@@ -26,7 +26,7 @@ const projects = [
   {
     title: 'Autonomous Rover using 3D SLAM',
     description: 'Developed an autonomous ground rover during a 6-month internship at IIT Delhi, focusing on real-time navigation, 3D SLAM, localization, and sensor fusion for robust autonomous movement.',
-    path: '/projects/rtk-rover'
+    path: '/projects/auto_rover'
   },
   {
     title: 'ROS2 SLAM using RTAB-Map',

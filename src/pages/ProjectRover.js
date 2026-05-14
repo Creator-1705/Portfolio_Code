@@ -28,7 +28,7 @@ const ProjectRover = () => (
     </p>
 
     <img
-      src={imga1}
+      src={imag1}
       style={{
         width: '100%',
         maxWidth: '600px',
@@ -266,4 +266,4 @@ const ProjectRover = () => (
   </div>
 );
 
-export default ProjectROS2;
+export default ProjectRover;
