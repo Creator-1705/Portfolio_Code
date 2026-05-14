@@ -21,24 +21,13 @@ const ProjectROS2 = () => (
     
     <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: '#ccc' }}>
       The work mainly focues on making a mobile robot that performs SLAM using RTAB-Map in a ROS 2 framework. It integrates Depth Camera ,Odometery and IMU
-      to create real-time 3D maps and track its position.
+      to create real-time 3D maps and track its position.The bot was changed during different steps, in the beggining the bot had only a basic RGB camera with IMU and encoders later even better ewuipments were added.
       Below is the video of the robot sending its camera,imu and odometery data
     </p>
 
     <div style={{ margin: '2rem 0', textAlign: 'left' }}>
       <video width="640" height="auto" controls style={{ maxWidth: '100%', borderRadius: '12px' }}>
         <source src={slamVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-
-    <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: '#ccc' }}>
-      The IMU, Odom, Depth,RGB data all were combined for the 3D mapping . below is the video for the first test result from the RTAB Package.
-    </p>
-
-    <div style={{ margin: '2rem 0', textAlign: 'left' }}>
-      <video width="640" height="auto" controls style={{ maxWidth: '100%', borderRadius: '12px' }}>
-        <source src={slamVideo2} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
@@ -74,7 +63,7 @@ const ProjectROS2 = () => (
       }}
     />
     <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
-      This is the Jetson Orin Nano
+      This is the Jetson Orin Nano ,that was used with the zed camera for processing of the depth data and running the RTAB-map application.
     </p>
 
     <img
@@ -89,22 +78,6 @@ const ProjectROS2 = () => (
       }}
     />
 
-    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
-      this is the new bot that was made in order to rectify the Odometery issue in old bot.
-    </p>
-
-    {/* RTAB-Map Image 1 */}
-    <img
-      src={rtabmap1}
-      alt="RTAB-Map Output 1"
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '2rem 0',
-        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
-      }}
-    />
     <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
       This is the pointcloud visualization from the depth data from ZED camera.
     </p>
