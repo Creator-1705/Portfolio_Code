@@ -62,7 +62,7 @@ function App() {
 
         {/* Individual project pages */}
         <Route path="/projects/ros2-slam" element={<ProjectROS2 />} />
-        <Route path="/projects/auto_rover" element={<ProjectROS2 />} />
+        <Route path="/projects/auto_rover" element={<ProjectRover />} />
         <Route path="/projects/eeg-hand" element={<ProjectEEG />} />
         <Route path="/projects/5g-swarm" element={<Project5G />} />
         <Route path="/projects/event-camera" element={<ProjectEventCamera />} />
