@@ -125,7 +125,7 @@ const skillIcons = {
   '8051': <FaMicrochip />,
   CH32V: <FaMicrochip />,
   Arduino: <SiArduino />,
-  'Jetson Nano': <SiNvidia />,
+  'Jetson Series': <SiNvidia />,
   'Raspberry Pi': <SiRaspberrypi />
 };
 
