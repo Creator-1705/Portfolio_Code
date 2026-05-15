@@ -35,7 +35,7 @@ const IITExperience = () => {
 
   return (
     <div className="project-page">
-      <h1>Mafkin Robotics Internship</h1>
+      <h1>IIT Robotics Internship</h1>
 
       <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem', textAlign: 'justify' }}>
         This section reflects not only my technical work but also my overall experience during my 6-month internship at IIT Delhi. 

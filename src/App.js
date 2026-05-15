@@ -1,12 +1,15 @@
 import React, { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
 import { Element } from 'react-scroll';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
+
 import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+
 import NeuralBackground from './components/NeuralBackground';
 import './App.css';
 
@@ -30,36 +33,41 @@ function App() {
   }, []);
 
   return (
-    <>
+    <Router>
+      <ScrollToTop />
+
       <NeuralBackground />
       <Navbar />
 
       <Routes>
-        <Route path="/" element={
-          <main>
-            <Element name="home" id="home">
-              <Home />
-            </Element>
+        <Route
+          path="/"
+          element={
+            <main>
+              <Element name="home" id="home">
+                <Home />
+              </Element>
 
-            <hr className="page-divider" />
+              <hr className="page-divider" />
 
-            <Element name="about" id="about">
-              <About />
-            </Element>
+              <Element name="about" id="about">
+                <About />
+              </Element>
 
-            <hr className="page-divider" />
+              <hr className="page-divider" />
 
-            <Element name="portfolio" id="portfolio">
-              <Portfolio />
-            </Element>
+              <Element name="portfolio" id="portfolio">
+                <Portfolio />
+              </Element>
 
-            <hr className="page-divider" />
+              <hr className="page-divider" />
 
-            <Element name="contact" id="contact">
-              <Contact />
-            </Element>
-          </main>
-        } />
+              <Element name="contact" id="contact">
+                <Contact />
+              </Element>
+            </main>
+          }
+        />
 
         {/* Individual project pages */}
         <Route path="/projects/ros2-slam" element={<ProjectROS2 />} />
@@ -72,7 +80,7 @@ function App() {
         <Route path="/experience/mafkin" element={<MafkinExperience />} />
         <Route path="/experience/IIT" element={<IITExperience />} />
       </Routes>
-    </>
+    </Router>
   );
 }
 

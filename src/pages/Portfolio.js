@@ -157,7 +157,7 @@ const Portfolio = () => {
               <p>{exp.description}</p>
               {exp.link && (
                 <Link to={exp.link} className="view-button" style={{ marginTop: '1rem', display: 'inline-block' }}>
-                  View Work
+                  View
                 </Link>
               )}
             </div>

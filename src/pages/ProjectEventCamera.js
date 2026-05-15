@@ -11,186 +11,95 @@ import dron1 from '/home/creator/Portfolio_Code/src/assets/dro1.jpeg';
 import dron2 from '/home/creator/Portfolio_Code/src/assets/dro2.jpeg';
 import dron3 from '/home/creator/Portfolio_Code/src/assets/dro3.jpeg';
 
-const ProjectEventCamera = () => (
-  <div className="project-page">
-    <h1>Robotics project I have worked on During My Learning Process</h1>
+const ProjectEventCamera = () => {
 
-    <p style={{ textAlign: 'justify' }}>
-      Featured below is a selection of my robotic projects. While this gallery focuses on high-resolution captures of recent builds, it represents only a subset of my full body of work Unfortunately, many videos are not available.
-    </p>
+  const imgStyle = {
+    width: '100%',
+    maxWidth: '600px',
+    height: '360px',
+    borderRadius: '12px',
+    margin: '1rem 0',
+    boxShadow: '0 0 12px rgba(0,0,0,0.4)',
+    objectFit: 'cover'
+  };
 
-    <p style={{ textAlign: 'justify' }}>
-      The below pictures were taken during the time when i was trying to implement the LLM framework as hardware.but was only able to finish till the part of controlling the drone through UDP connection. 
-    </p>
+  return (
+    <div className="project-page">
+      <h1>Robotics project I have worked on During My Learning Process</h1>
 
-    <img
-      src={dron1}
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '2rem 0',
-        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
-      }}
-    />
-    <img
-      src={dron2}
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '2rem 0',
-        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
-      }}
-    />
-    <img
-      src={dron3}
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '2rem 0',
-        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
-      }}
-    />
+      <p style={{ textAlign: 'justify' }}>
+        Featured below is a selection of my robotic projects. While this gallery focuses on high-resolution captures of recent builds, it represents only a subset of my full body of work Unfortunately, many videos are not available.
+      </p>
 
-    {/* Drone Section */}
-    <p style={{ textAlign: 'justify' }}>
-      Below is the drone project I worked on using an APM flight controller. It was controlled using a FlySky transmitter and receiver.
-      The motors are 2200kv rated and powered by a 2200mAh (30C 3S) LiPo battery.This was the first drone that i built myself after taking a udemy course on how to build a drone.
-      a lot of the pics are missing since i made this durint my 10th grade and didnt know much about the importance of the documentation processes.
-    </p>
+      <p style={{ textAlign: 'justify' }}>
+        The below pictures were taken during the time when i was trying to implement the LLM framework as hardware.but was only able to finish till the part of controlling the drone through UDP connection. 
+      </p>
 
-    <div
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        gap: '1rem',
-        justifyContent: 'left',
-        margin: '2rem 0',
-      }}
-    >
-      <img
-        src={roneImage}
-        alt="Drone 1"
-        style={{
-          width: '100%',
-          maxWidth: '280px',
-          borderRadius: '12px',
-          boxShadow: '0 0 12px rgba(0,0,0,0.4)',
-          objectFit: 'cover',
-        }}
-      />
-      <img
-        src={roneImage2}
-        alt="Drone 2"
-        style={{
-          width: '100%',
-          maxWidth: '280px',
-          borderRadius: '12px',
-          boxShadow: '0 0 12px rgba(0,0,0,0.4)',
-          objectFit: 'cover',
-        }}
-      />
+      {/* FIRST 2 IMAGES SIDE BY SIDE */}
+      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+        <img src={dron1} style={imgStyle} />
+        <img src={dron2} style={imgStyle} />
+      </div>
+
+      {/* THIRD IMAGE MOVED DOWN */}
+      <div>
+        <img src={dron3} style={imgStyle} />
+      </div>
+
+      {/* Drone Section */}
+      <p style={{ textAlign: 'justify' }}>
+        Below is the drone project I worked on using an APM flight controller. It was controlled using a FlySky transmitter and receiver.
+        The motors are 2200kv rated and powered by a 2200mAh (30C 3S) LiPo battery.This was the first drone that i built myself after taking a udemy course on how to build a drone.
+        a lot of the pics are missing since i made this durint my 10th grade and didnt know much about the importance of the documentation processes.
+      </p>
+
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
+        <img src={roneImage} style={{ ...imgStyle, maxWidth: '280px', height: '200px' }} />
+        <img src={roneImage2} style={{ ...imgStyle, maxWidth: '280px', height: '200px' }} />
+      </div>
+
+      {/* Maze Solver Section */}
+      <p style={{ textAlign: 'justify' }}>
+        Below is the Maze Solver robot, which was built using PID control and the LSRB algorithm.
+      </p>
+
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
+        <img src={mazeImage} style={{ ...imgStyle, maxWidth: '280px', height: '200px' }} />
+        <img src={mazeImage1} style={{ ...imgStyle, maxWidth: '280px', height: '200px' }} />
+      </div>
+
+      {/* Hovercraft Section */}
+      <p style={{ textAlign: 'justify' }}>
+        I also built a hovercraft using a foam base and three motors — one for lift and others for thrust. 
+        It was powered by a LiPo battery and controlled using a Flysky transmitter. It was designed to glide over smooth surfaces.
+      </p>
+
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
+        <img src={hoverImage} style={{ ...imgStyle, maxWidth: '280px', height: '200px' }} />
+        <img src={hoverImage2} style={{ ...imgStyle, maxWidth: '280px', height: '200px' }} />
+      </div>
+
+      {/* Back Button */}
+      <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+        <Link
+          to="/"
+          className="view-button"
+          style={{
+            padding: '0.75rem 1.5rem',
+            fontSize: '1rem',
+            borderRadius: '30px',
+            backgroundColor: '#00bcd4',
+            color: '#000',
+            fontWeight: 'bold',
+            textDecoration: 'none',
+            transition: 'background-color 0.3s ease',
+          }}
+        >
+          ← Back to Portfolio
+        </Link>
+      </div>
     </div>
-
-    {/* Maze Solver Section */}
-    <p style={{ textAlign: 'justify' }}>
-      Below is the Maze Solver robot, which was built using PID control and the LSRB algorithm.
-    </p>
-
-    <div
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        gap: '1rem',
-        justifyContent: 'left',
-        margin: '2rem 0',
-      }}
-    >
-      <img
-        src={mazeImage}
-        alt="Maze Solver 1"
-        style={{
-          width: '100%',
-          maxWidth: '280px',
-          borderRadius: '12px',
-          boxShadow: '0 0 12px rgba(0,0,0,0.4)',
-          objectFit: 'cover',
-        }}
-      />
-      <img
-        src={mazeImage1}
-        alt="Maze Solver 2"
-        style={{
-          width: '100%',
-          maxWidth: '280px',
-          borderRadius: '12px',
-          boxShadow: '0 0 12px rgba(0,0,0,0.4)',
-          objectFit: 'cover',
-        }}
-      />
-    </div>
-
-    {/* Hovercraft Section */}
-    <p style={{ textAlign: 'justify' }}>
-      I also built a hovercraft using a foam base and three motors — one for lift and others for thrust. 
-      It was powered by a LiPo battery and controlled using a Flysky transmitter. It was designed to glide over smooth surfaces.
-    </p>
-
-    <div
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        gap: '1rem',
-        justifyContent: 'left',
-        margin: '2rem 0',
-      }}
-    >
-      <img
-        src={hoverImage}
-        alt="Hovercraft 1"
-        style={{
-          width: '100%',
-          maxWidth: '280px',
-          borderRadius: '12px',
-          boxShadow: '0 0 12px rgba(0,0,0,0.4)',
-          objectFit: 'cover',
-        }}
-      />
-      <img
-        src={hoverImage2}
-        alt="Hovercraft 2"
-        style={{
-          width: '100%',
-          maxWidth: '280px',
-          borderRadius: '12px',
-          boxShadow: '0 0 12px rgba(0,0,0,0.4)',
-          objectFit: 'cover',
-        }}
-      />
-    </div>
-
-    {/* Centered Back Button */}
-    <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-      <Link
-        to="/"
-        className="view-button"
-        style={{
-          padding: '0.75rem 1.5rem',
-          fontSize: '1rem',
-          borderRadius: '30px',
-          backgroundColor: '#00bcd4',
-          color: '#000',
-          fontWeight: 'bold',
-          textDecoration: 'none',
-          transition: 'background-color 0.3s ease',
-        }}
-      >
-        ← Back to Portfolio
-      </Link>
-    </div>
-  </div>
-);
+  );
+};
 
 export default ProjectEventCamera;
