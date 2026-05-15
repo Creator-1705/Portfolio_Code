@@ -7,19 +7,58 @@ import mazeImage from '../assets/mazesolver.jpg';
 import mazeImage1 from '../assets/maze solver.jpg';
 import hoverImage from '../assets/hover1.jpg';
 import hoverImage2 from '../assets/hover2.jpg';
+import dron1 from '/home/creator/Portfolio_Code/src/assets/dro1.jpeg';
+import dron2 from '/home/creator/Portfolio_Code/src/assets/dro2.jpeg';
+import dron3 from '/home/creator/Portfolio_Code/src/assets/dro3.jpeg';
 
 const ProjectEventCamera = () => (
   <div className="project-page">
-    <h1>Basic Robots I Created During My Learning Process</h1>
+    <h1>Robotics project I have worked on During My Learning Process</h1>
 
-    <p>
-      This page contains robots I have photos of — not all I've made. Unfortunately, many videos are not available.
+    <p style={{ textAlign: 'justify' }}>
+      Featured below is a selection of my robotic projects. While this gallery focuses on high-resolution captures of recent builds, it represents only a subset of my full body of work Unfortunately, many videos are not available.
     </p>
 
+    <p style={{ textAlign: 'justify' }}>
+      The below pictures were taken during the time when i was trying to implement the LLM framework as hardware.but was only able to finish till the part of controlling the drone through UDP connection. 
+    </p>
+
+    <img
+      src={dron1}
+      style={{
+        width: '100%',
+        maxWidth: '600px',
+        borderRadius: '12px',
+        margin: '2rem 0',
+        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
+      }}
+    />
+    <img
+      src={dron2}
+      style={{
+        width: '100%',
+        maxWidth: '600px',
+        borderRadius: '12px',
+        margin: '2rem 0',
+        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
+      }}
+    />
+    <img
+      src={dron3}
+      style={{
+        width: '100%',
+        maxWidth: '600px',
+        borderRadius: '12px',
+        margin: '2rem 0',
+        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
+      }}
+    />
+
     {/* Drone Section */}
-    <p>
+    <p style={{ textAlign: 'justify' }}>
       Below is the drone project I worked on using an APM flight controller. It was controlled using a FlySky transmitter and receiver.
-      The motors are 2200kv rated and powered by a 2200mAh (30C 3S) LiPo battery.
+      The motors are 2200kv rated and powered by a 2200mAh (30C 3S) LiPo battery.This was the first drone that i built myself after taking a udemy course on how to build a drone.
+      a lot of the pics are missing since i made this durint my 10th grade and didnt know much about the importance of the documentation processes.
     </p>
 
     <div
@@ -56,7 +95,7 @@ const ProjectEventCamera = () => (
     </div>
 
     {/* Maze Solver Section */}
-    <p>
+    <p style={{ textAlign: 'justify' }}>
       Below is the Maze Solver robot, which was built using PID control and the LSRB algorithm.
     </p>
 
@@ -94,7 +133,7 @@ const ProjectEventCamera = () => (
     </div>
 
     {/* Hovercraft Section */}
-    <p>
+    <p style={{ textAlign: 'justify' }}>
       I also built a hovercraft using a foam base and three motors — one for lift and others for thrust. 
       It was powered by a LiPo battery and controlled using a Flysky transmitter. It was designed to glide over smooth surfaces.
     </p>

@@ -66,7 +66,7 @@ const experience = [
     duration: 'Dec 2025 - May 2026',
     type: 'On-site',
     description: 'Worked on autonomous rover for mapping , localization and navigation. The internship was for 6-months ',
-    link: '/experience/mafkin'
+    link: '/experience/IIT'
   },
   {
     company: 'Mafkin Robotics',

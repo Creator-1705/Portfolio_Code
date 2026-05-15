@@ -13,7 +13,7 @@ import rtabmapnew5 from '../assets/rtabmapnew5.jpeg';
 import zedcamera from '../assets/zed1Untitled.jpeg';
 import newbot from '../assets/post123Untitled.jpeg';
 import jetsonnano from '../assets/jetsonUntitled.jpeg';
-
+import jetnano2 from '/home/creator/Portfolio_Code/src/assets/mafkin_assets/WhatsApp Image 2026-05-15 at 2.50.48 PM (1).jpeg';
 
 const ProjectROS2 = () => (
   <div className="project-page">
@@ -65,7 +65,20 @@ const ProjectROS2 = () => (
     <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
       This is the Jetson Orin Nano ,that was used with the zed camera for processing of the depth data and running the RTAB-map application.
     </p>
-
+    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
+      Working on the Jetson.
+    </p>
+    <img
+      src={jetnano2}
+      alt="RTAB-Map Output 5"
+      style={{
+        width: '100%',
+        maxWidth: '600px',
+        borderRadius: '12px',
+        margin: '2rem 0',
+        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
+      }}
+    />
     <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
       This is the pointcloud visualization from the depth data from ZED camera.
     </p>

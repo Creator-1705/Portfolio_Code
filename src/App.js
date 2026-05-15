@@ -17,6 +17,7 @@ import ProjectEventCamera from './pages/ProjectEventCamera';
 import ProjectCH32V from './pages/ProjectCH32V';
 import ProjectRTK from './pages/ProjectRTK';
 import MafkinExperience from './pages/MafkinExperience';
+import IITExperience from './pages/IITExperience';
 import ProjectRover from './pages/ProjectRover';
 
 // 📦 GA setup
@@ -69,6 +70,7 @@ function App() {
         <Route path="/projects/ch32v-gui" element={<ProjectCH32V />} />
         <Route path="/projects/rtk-rover" element={<ProjectRTK />} />
         <Route path="/experience/mafkin" element={<MafkinExperience />} />
+        <Route path="/experience/IIT" element={<IITExperience />} />
       </Routes>
     </>
   );

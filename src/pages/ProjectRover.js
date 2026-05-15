@@ -20,7 +20,7 @@ const ProjectRover = () => (
   <div className="project-page">
     <h1>Fully Functional Autonomous Rover </h1>
     
-    <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: '#ccc' }}>
+    <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: '#ccc' ,textAlign: 'justify'}}>
       This page is a reflection of all the work thats has been done during my 6-month internship at CART department at IIT-Delhi.
       The entire rover was built by me from scratch and all the software integration work was also done by me.The rover can perform 3D mapping using ORB algorithm through RTAB and then perform localization and navigation simultaneously.
       The software was mostly dependent on the ROS2 packages and repositories.The rover aditionally uses April tags as Landmarks for localization and drift correction.
@@ -38,7 +38,7 @@ const ProjectRover = () => (
       }}
     />
 
-    <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: '#ccc' }}>
+    <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: '#ccc' ,textAlign: 'justify'}}>
       The below picture shows the hetson Orin AGX being enclosed in a 3D printed case,along with arduino and IMU.
     </p>
 
@@ -52,7 +52,7 @@ const ProjectRover = () => (
         boxShadow: '0 0 12px rgba(0,0,0,0.4)'
       }}
     />
-    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
+    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' ,textAlign: 'justify'}}>
       The below is a video demonstrating the rover performing motion and streaming video data.
     </p>
     <div style={{ margin: '2rem 0', textAlign: 'left' }}>
@@ -71,7 +71,7 @@ const ProjectRover = () => (
             Your browser does not support the video tag.
           </video>
     </div>
-    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
+    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem',textAlign: 'justify' }}>
       The below video shows the rover performing the 3D mapping of the environment.It primarily uses ORB feature detection.During mapping the Apriltagsare also visible.
     </p>
     <div style={{ margin: '2rem 0', textAlign: 'left' }}>
@@ -90,7 +90,7 @@ const ProjectRover = () => (
             Your browser does not support the video tag.
           </video>
     </div>
-    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
+    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' ,textAlign: 'justify'}}>
       The below is the Output collected during the mapping process.It shows the 2D graph map and also the 3D point cloud maps are shown.
       The yellow coloured points in the map indicate detection of AprilTags as Landmarks.The april tags were kept in different areas in the environment for landmark purposes.
     </p>
@@ -182,7 +182,7 @@ const ProjectRover = () => (
         boxShadow: '0 0 12px rgba(0,0,0,0.4)'
       }}
     />
-    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
+    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' ,textAlign: 'justify'}}>
       The below is the video demonstrating the mapping ,navigation and localization being performed in an outdoor environment.
     </p>
 
@@ -203,7 +203,7 @@ const ProjectRover = () => (
             Your browser does not support the video tag.
           </video>
     </div>
-    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' }}>
+    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem' ,textAlign: 'justify'}}>
       The below video demonstrates the navigation process ,where a goal point is placed in Rviz and then the path published.
     </p>
 

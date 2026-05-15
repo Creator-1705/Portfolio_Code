@@ -18,11 +18,19 @@ import workflow from '/home/creator/Portfolio_Code/src/assets/drone_Assets/workf
 import xrce from '/home/creator/Portfolio_Code/src/assets/drone_Assets/xrce.jpeg';
 
 const Project5G = () => (
-  <div className="project-page" style={{ padding: '2rem', color: '#ccc', maxWidth: '900px', margin: '0 auto' }}>
+  <div
+    className="project-page"
+    style={{
+      padding: '2rem',
+      color: '#ccc',
+      maxWidth: '900px',
+      margin: '0'   // ✅ FIXED: was '0 auto'
+    }}
+  >
     <h1 style={{ color: '#fff', marginBottom: '1.5rem' }}>
       NLP-Integrated Autonomous Drone Control
     </h1>
-    
+
     <p style={{ fontSize: '1.2rem', lineHeight: '1.6', marginBottom: '2rem' }}>
       This project developed a fully integrated Natural Language Processing (NLP) pipeline bridged 
       with a drone control system, enabling seamless human-robot interaction via voice commands. 
@@ -60,211 +68,75 @@ const Project5G = () => (
       The image below shows the overall workflow of the system.
     </p>
 
-    <img
-      src={workflow}
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '1rem 0',
-        boxShadow: '0 4px 20px rgba(0,0,0,0.6)',
-        display: 'block'
-      }}
-    />
+    <img src={workflow} style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', margin: '1rem 0', boxShadow: '0 4px 20px rgba(0,0,0,0.6)', display: 'block' }} />
 
     <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#bbb' }}>
       The image below shows the simulation outputs,where the wake-word,STT and the trained transformers were integrated witht ROS2 and Gazebo .
       The simulation was performed using the PX4 autopilot drone model in Gazebo.
     </p>
-  
-    {/* Image 2: Hardware Enclosure */}
-    <img
-      src={px4d}
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '1rem 0',
-        boxShadow: '0 4px 20px rgba(0,0,0,0.6)',
-        display: 'block'
-      }}
-    />
-    <img
-      src={dcl}
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '1rem 0',
-        boxShadow: '0 4px 20px rgba(0,0,0,0.6)',
-        display: 'block'
-      }}
-    />
-    <img
-      src={dld}
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '1rem 0',
-        boxShadow: '0 4px 20px rgba(0,0,0,0.6)',
-        display: 'block'
-      }}
-    />
-    <img
-      src={llm1}
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '1rem 0',
-        boxShadow: '0 4px 20px rgba(0,0,0,0.6)',
-        display: 'block'
-      }}
-    />
-    <img
-      src={llm2}
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '1rem 0',
-        boxShadow: '0 4px 20px rgba(0,0,0,0.6)',
-        display: 'block'
-      }}
-    />
-    <img
-      src={llm3}
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '1rem 0',
-        boxShadow: '0 4px 20px rgba(0,0,0,0.6)',
-        display: 'block'
-      }}
-    />
-    <img
-      src={llm3}
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '1rem 0',
-        boxShadow: '0 4px 20px rgba(0,0,0,0.6)',
-        display: 'block'
-      }}
-    />
-    <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#bbb' }}>
-      The image below shows the usage od the xrce middleware software for the communication of data to the drone since it is being run as a simulation.
-    </p>
-    <img
-      src={xrce}
-      alt="XRCE middleware"
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '1rem 0',
-        boxShadow: '0 4px 20px rgba(0,0,0,0.6)',
-        display: 'block'
-      }}
-    />
-    <img
-      src={test}
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '1rem 0',
-        boxShadow: '0 4px 20px rgba(0,0,0,0.6)',
-        display: 'block'
-      }}
-    />
-    <img
-      src={immg}
-      style={{
-        width: '100%',
-        maxWidth: '600px',
-        borderRadius: '12px',
-        margin: '1rem 0',
-        boxShadow: '0 4px 20px rgba(0,0,0,0.6)',
-        display: 'block'
-      }}
-    />
+
+    <img src={px4d} style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', margin: '1rem 0', boxShadow: '0 4px 20px rgba(0,0,0,0.6)', display: 'block' }} />
+    <img src={dcl} style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', margin: '1rem 0', boxShadow: '0 4px 20px rgba(0,0,0,0.6)', display: 'block' }} />
+    <img src={dld} style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', margin: '1rem 0', boxShadow: '0 4px 20px rgba(0,0,0,0.6)', display: 'block' }} />
+    <img src={llm1} style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', margin: '1rem 0', boxShadow: '0 4px 20px rgba(0,0,0,0.6)', display: 'block' }} />
+    <img src={llm2} style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', margin: '1rem 0', boxShadow: '0 4px 20px rgba(0,0,0,0.6)', display: 'block' }} />
+    <img src={llm3} style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', margin: '1rem 0', boxShadow: '0 4px 20px rgba(0,0,0,0.6)', display: 'block' }} />
 
     <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#bbb' }}>
-      The following videos below show the testion of the entire system starting with the wake-word model,STT,intent model,command mapping and final action.
+      The image below shows the usage of the xrce middleware software for the communication of data to the drone since it is being run as a simulation.
+    </p>
+
+    <img src={xrce} alt="XRCE middleware" style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', margin: '1rem 0', boxShadow: '0 4px 20px rgba(0,0,0,0.6)', display: 'block' }} />
+    <img src={test} style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', margin: '1rem 0', boxShadow: '0 4px 20px rgba(0,0,0,0.6)', display: 'block' }} />
+    <img src={immg} style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', margin: '1rem 0', boxShadow: '0 4px 20px rgba(0,0,0,0.6)', display: 'block' }} />
+
+    <p style={{ fontSize: '1.1rem', lineHeight: '1.6', color: '#bbb' }}>
+      The following videos below show the testing of the entire system starting with the wake-word model, STT, intent model, command mapping and final action.
     </p>
 
     <div style={{ margin: '2rem 0', textAlign: 'left' }}>
-          <video
-            controls
-            style={{
-              width: '360px',
-              height: '640px',
-              maxWidth: '100%',
-              borderRadius: '12px',
-              objectFit: 'contain',
-              boxShadow: '0 0 10px rgba(0,0,0,0.4)'
-            }}
-          >
-            <source src={llmt1} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-    </div>
-    <div style={{ margin: '2rem 0', textAlign: 'left' }}>
-          <video
-            controls
-            style={{
-              width: '360px',
-              height: '640px',
-              maxWidth: '100%',
-              borderRadius: '12px',
-              objectFit: 'contain',
-              boxShadow: '0 0 10px rgba(0,0,0,0.4)'
-            }}
-          >
-            <source src={llmt2} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-    </div>
-    <div style={{ margin: '2rem 0', textAlign: 'left' }}>
-          <video
-            controls
-            style={{
-              width: '360px',
-              height: '640px',
-              maxWidth: '100%',
-              borderRadius: '12px',
-              objectFit: 'contain',
-              boxShadow: '0 0 10px rgba(0,0,0,0.4)'
-            }}
-          >
-            <source src={llmt3} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-    </div>
-    <div style={{ margin: '2rem 0', textAlign: 'left' }}>
-          <video
-            controls
-            style={{
-              width: '360px',
-              height: '640px',
-              maxWidth: '100%',
-              borderRadius: '12px',
-              objectFit: 'contain',
-              boxShadow: '0 0 10px rgba(0,0,0,0.4)'
-            }}
-          >
-            <source src={llmt4} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+      <video controls style={{ width: '360px', height: '640px', maxWidth: '100%', borderRadius: '12px', objectFit: 'contain', boxShadow: '0 0 10px rgba(0,0,0,0.4)' }}>
+        <source src={llmt1} type="video/mp4" />
+      </video>
     </div>
 
+    <div style={{ margin: '2rem 0', textAlign: 'left' }}>
+      <video controls style={{ width: '360px', height: '640px', maxWidth: '100%', borderRadius: '12px', objectFit: 'contain', boxShadow: '0 0 10px rgba(0,0,0,0.4)' }}>
+        <source src={llmt2} type="video/mp4" />
+      </video>
+    </div>
 
+    <div style={{ margin: '2rem 0', textAlign: 'left' }}>
+      <video controls style={{ width: '360px', height: '640px', maxWidth: '100%', borderRadius: '12px', objectFit: 'contain', boxShadow: '0 0 10px rgba(0,0,0,0.4)' }}>
+        <source src={llmt3} type="video/mp4" />
+      </video>
+    </div>
+
+    <div style={{ margin: '2rem 0', textAlign: 'left' }}>
+      <video controls style={{ width: '360px', height: '640px', maxWidth: '100%', borderRadius: '12px', objectFit: 'contain', boxShadow: '0 0 10px rgba(0,0,0,0.4)' }}>
+        <source src={llmt4} type="video/mp4" />
+      </video>
+    </div>
+
+    <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+      <Link
+        to="/"
+        className="view-button"
+        style={{
+          padding: '0.75rem 1.5rem',
+          fontSize: '1rem',
+          borderRadius: '30px',
+          backgroundColor: '#00bcd4',
+          color: '#000',
+          fontWeight: 'bold',
+          textDecoration: 'none',
+          transition: 'background-color 0.3s ease',
+        }}
+      >
+        ← Back to Portfolio
+      </Link>
+    </div>
   </div>
-
 );
 
 export default Project5G;
