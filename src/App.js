@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { Element } from 'react-scroll';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -33,7 +32,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <>
       <ScrollToTop />
 
       <NeuralBackground />
@@ -80,7 +79,7 @@ function App() {
         <Route path="/experience/mafkin" element={<MafkinExperience />} />
         <Route path="/experience/IIT" element={<IITExperience />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 
