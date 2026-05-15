@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio_Code/static/css/main.bd37e380.css",
-    "main.js": "/Portfolio_Code/static/js/main.9c469fd0.js",
+    "main.js": "/Portfolio_Code/static/js/main.94315615.js",
     "static/media/sihandvid.mp4": "/Portfolio_Code/static/media/sihandvid.6e43cc2cbf2ab63c901b.mp4",
     "static/media/mapping.mp4": "/Portfolio_Code/static/media/mapping.75b99bc990b28b6603af.mp4",
     "static/media/nav1.mp4": "/Portfolio_Code/static/media/nav1.23978a55231b753ddf59.mp4",
@@ -31,12 +31,15 @@
     "static/media/rtabmap_apriltag1.jpeg": "/Portfolio_Code/static/media/rtabmap_apriltag1.7ec7728ff7a4d53ec351.jpeg",
     "static/media/stm3new.jpg": "/Portfolio_Code/static/media/stm3new.f0367b040dc96da48ffc.jpg",
     "static/media/WhatsApp Image 2026-05-15 at 11.32.12 AM (9).jpeg": "/Portfolio_Code/static/media/WhatsApp Image 2026-05-15 at 11.32.12 AM (9).cf8f423d070e8dfcd28c.jpeg",
+    "static/media/dro3.jpeg": "/Portfolio_Code/static/media/dro3.700a3a8386c30a6a589d.jpeg",
     "static/media/jetsonUntitled.jpeg": "/Portfolio_Code/static/media/jetsonUntitled.b4e5e5d8805339e3c9d4.jpeg",
     "static/media/front_case.jpeg": "/Portfolio_Code/static/media/front_case.394bf49a9cd318fdf9b9.jpeg",
     "static/media/sihand4.jpg": "/Portfolio_Code/static/media/sihand4.e360cb3a8dce0c3e45b4.jpg",
     "static/media/mafkin21.jpg": "/Portfolio_Code/static/media/mafkin21.6a02147e55e96234c73f.jpg",
     "static/media/sihand3.jpg": "/Portfolio_Code/static/media/sihand3.6d480565b52366e49a96.jpg",
+    "static/media/dro2.jpeg": "/Portfolio_Code/static/media/dro2.a77a9c68cb8afddbe2cb.jpeg",
     "static/media/conf_matrix.jpeg": "/Portfolio_Code/static/media/conf_matrix.46264c7930c8c5c01386.jpeg",
+    "static/media/dro1.jpeg": "/Portfolio_Code/static/media/dro1.777b3f3247507eace3e7.jpeg",
     "static/media/rtabmapnew5.jpeg": "/Portfolio_Code/static/media/rtabmapnew5.df6a93df3b4bfaca51dd.jpeg",
     "static/media/ec2.jpg": "/Portfolio_Code/static/media/ec2.f3fa020105134efe3cb1.jpg",
     "static/media/amp1.jpg": "/Portfolio_Code/static/media/amp1.bd56fdb1d7eeb2211df0.jpg",
@@ -74,10 +77,10 @@
     "static/media/2022-09-26_Arducam_TOF2.avif": "/Portfolio_Code/static/media/2022-09-26_Arducam_TOF2.de6185b425ce556bc365.avif",
     "index.html": "/Portfolio_Code/index.html",
     "main.bd37e380.css.map": "/Portfolio_Code/static/css/main.bd37e380.css.map",
-    "main.9c469fd0.js.map": "/Portfolio_Code/static/js/main.9c469fd0.js.map"
+    "main.94315615.js.map": "/Portfolio_Code/static/js/main.94315615.js.map"
   },
   "entrypoints": [
     "static/css/main.bd37e380.css",
-    "static/js/main.9c469fd0.js"
+    "static/js/main.94315615.js"
   ]
 }
