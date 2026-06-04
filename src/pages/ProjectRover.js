@@ -16,6 +16,9 @@ import vid2 from '/home/creator/Portfolio_Code/src/assets/IIT_assets/rover_funct
 import vid3 from '/home/creator/Portfolio_Code/src/assets/IIT_assets/mapping.mp4'
 import vid4 from '/home/creator/Portfolio_Code/src/assets/IIT_assets/nav1.mp4'
 import vid5 from '/home/creator/Portfolio_Code/src/assets/IIT_assets/nav2.mp4'
+import vid6 from '/home/creator/Portfolio_Code/src/assets/IIT_assets/field_test_vid.mp4'
+import img11 from '/home/creator/Portfolio_Code/src/assets/IIT_assets/field_test1.jpeg'
+import img12 from '/home/creator/Portfolio_Code/src/assets/IIT_assets/field_test2.jpeg'
 const ProjectRover = () => (
   <div className="project-page">
     <h1>Fully Functional Autonomous Rover </h1>
@@ -240,6 +243,52 @@ const ProjectRover = () => (
             Your browser does not support the video tag.
           </video>
     </div>
+
+
+
+    <p style={{ fontSize: '1rem', color: '#ccc', marginBottom: '2rem',textAlign: 'justify' }}>
+      The below video shows the rover performing the autonomous navigation in the outdoor agricutural terrain.
+    </p>
+    <div style={{ margin: '2rem 0', textAlign: 'left' }}>
+          <video
+            controls
+            style={{
+              width: '360px',
+              height: '640px',
+              maxWidth: '100%',
+              borderRadius: '12px',
+              objectFit: 'contain',
+              boxShadow: '0 0 10px rgba(0,0,0,0.4)'
+            }}
+          >
+            <source src={vid6} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+    </div>
+    <p style={{ fontSize: '1.2rem', lineHeight: '1.6', color: '#ccc' ,textAlign: 'justify'}}>
+      The below pictures were taken during the external outdoor testing
+    </p>
+
+    <img
+      src={img11}
+      style={{
+        width: '100%',
+        maxWidth: '600px',
+        borderRadius: '12px',
+        margin: '2rem 0',
+        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
+      }}
+    />
+    <img
+      src={img12}
+      style={{
+        width: '100%',
+        maxWidth: '600px',
+        borderRadius: '12px',
+        margin: '2rem 0',
+        boxShadow: '0 0 12px rgba(0,0,0,0.4)'
+      }}
+    />
 
 
     <div style={{ textAlign: 'center' }}>
